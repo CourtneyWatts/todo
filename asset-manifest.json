@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/todo/static/css/main.e94631e6.chunk.css",
+    "main.js": "/todo/static/js/main.4129e8ea.chunk.js",
+    "main.js.map": "/todo/static/js/main.4129e8ea.chunk.js.map",
+    "runtime-main.js": "/todo/static/js/runtime-main.2a8ec137.js",
+    "runtime-main.js.map": "/todo/static/js/runtime-main.2a8ec137.js.map",
+    "static/js/2.f908d568.chunk.js": "/todo/static/js/2.f908d568.chunk.js",
+    "static/js/2.f908d568.chunk.js.map": "/todo/static/js/2.f908d568.chunk.js.map",
+    "index.html": "/todo/index.html",
+    "precache-manifest.a5b496c106125d5e58c5372e12f8f5ea.js": "/todo/precache-manifest.a5b496c106125d5e58c5372e12f8f5ea.js",
+    "service-worker.js": "/todo/service-worker.js",
+    "static/css/main.e94631e6.chunk.css.map": "/todo/static/css/main.e94631e6.chunk.css.map",
+    "static/js/2.f908d568.chunk.js.LICENSE.txt": "/todo/static/js/2.f908d568.chunk.js.LICENSE.txt",
+    "static/media/add-button.svg": "/todo/static/media/add-button.5360a889.svg",
+    "static/media/delete.svg": "/todo/static/media/delete.c7e6fe43.svg",
+    "static/media/edit.svg": "/todo/static/media/edit.014be509.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2a8ec137.js",
+    "static/js/2.f908d568.chunk.js",
+    "static/css/main.e94631e6.chunk.css",
+    "static/js/main.4129e8ea.chunk.js"
+  ]
+}
