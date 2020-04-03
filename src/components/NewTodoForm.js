@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid'
+import './NewTodoForm.scss'
+import AddIcon from '../icons/add-button.svg'
 
 export default class NewTodoForm extends Component {
   constructor (props) {
@@ -12,6 +14,9 @@ export default class NewTodoForm extends Component {
   }
 
   handleChange (evt) {
+    if (evt.target.value.length >= 50) {
+      return
+    }
     this.setState({
       [evt.target.name]: evt.target.value
     })
@@ -22,7 +27,7 @@ export default class NewTodoForm extends Component {
     if (!this.state.name) {
       return
     }
-    this.props.addNewTodo({ ...this.state, id: uuidv4() })
+    this.props.addNewTodo({ ...this.state, id: uuidv4(), completed: false })
     this.setState({
       name: ''
     })
@@ -30,10 +35,14 @@ export default class NewTodoForm extends Component {
 
   render () {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <input name='name' onChange={this.handleChange} value={this.state.name} type='text' />
-        <button>Add</button>
-      </form>
+      <div>
+        <form className='NewTodoForm' onClick={this.handleSubmit}>
+          <input name='name' onChange={this.handleChange} value={this.state.name} type='text' />
+          <div className='addBtn'>
+            <button><img src={AddIcon} /></button>
+          </div>
+        </form>
+      </div>
     )
   }
 }
