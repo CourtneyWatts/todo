@@ -71,7 +71,7 @@ class TodoList extends Component {
       return <Todo name={todo.name} key={todo.id} id={todo.id} toggleCompleted={this.toggleCompleted} completed={todo.completed} editMode={todo.editMode} edit={() => { this.editTodo(todo.id) }} save={this.saveTodo} remove={() => { this.removeTodo(todo.id) }} />
     })
     return (
-      <div className='Todolist'>
+      <div className='todo Todolist'>
         <h1>Todo List!</h1>
         <NewTodoForm addNewTodo={this.addTodo} />
         {todos}

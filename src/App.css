@@ -37,3 +37,23 @@
     transform: rotate(360deg);
   }
 }
+.small-screen-text{
+  font-size: 25px;
+  padding: 20px;
+  font-weight: bold;
+  color: #46566B;
+  ;
+}
+@media (max-width: 1200px) {
+  .todo {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .small-screen-text{
+    display: none;
+  }
+  .todo {
+    display: block;
+  }
+}
