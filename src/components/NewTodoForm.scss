@@ -1,0 +1,41 @@
+.NewTodoForm {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  
+  img {
+    width:50%;
+
+  }
+  input {
+    color: #46566B;
+    padding: 5px 15px;
+    border-radius: 3px 0 0 3px;
+    font-size: 35px;
+    line-height: 35px;
+    border: 2px solid rgb(194, 194, 194);
+    width: 100%;
+    border-right: none;
+    &:focus{
+      border: 2px solid rgb(194, 194, 194);
+      border-right: none;
+      outline: none;
+    }
+  }
+  button {
+    width: 70px;
+    height: 100%;
+    border: 2px solid rgb(194, 194, 194);
+    border-left: none;
+    border-radius: 0 3px 3px 0;
+
+    &:focus{
+      border: none;
+      outline: none;
+      border: 2px solid rgb(194, 194, 194);
+      border-left: none;
+    }
+  }
+  .addBtn {
+  }
+}
